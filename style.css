@@ -49,14 +49,35 @@ body {
   align-items: center;
 }
 
+.info-for-users__log-in::before {
+  display: block;
+  content: '';
+  background-image: url(images/sprites.webp);
+  background-position: 281px 153px;
+  width: 26px;
+  height: 15px;
+}
+
+.info-for-users__cart::before{
+  display: block;
+  content: '';
+  background-image: url(images/sprites.webp);
+  background-position: 255px 153px;
+  width: 26px;
+  height: 15px;
+}
+
+.info-for-users__log-in,
+.info-for-users__cart,
 .info-for-users__text {
+  display: flex;
   color: #fff;
   font-family: "Open Sans", "Helvetica", sans-serif;
   font-size: 13px;
   font-weight: 600;
   font-style: normal;
   letter-spacing: 0;
-  margin: -3px 13px 0 0;
+  margin: -3px 4px 0 0;
 }
 
 .info-for-users__links {
@@ -82,7 +103,7 @@ body {
   background-color: #fff;
   border-color: #959595;
   box-shadow: 0 1px 5px rgba(71, 69, 56, 0.3) inset;
-  margin-left: 45px;
+  margin-left: 55px;
 }
 
 .search__input {
@@ -107,7 +128,7 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.45);
-  padding: 0 19.75%;
+  padding: 0 18.3%;
 }
 
 .navigation__menu {
@@ -115,12 +136,13 @@ body {
   margin-left: 230px;
 }
 
-.navigation__menu-item, .navigation__menu-active-item {
+.navigation__menu-item,
+.navigation__menu-active-item {
   white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 7px 14px;
+  padding: 0px 7px 11px;
   color: #fff;
   font-family: "Open Sans", "Helvetica", sans-serif;
 
@@ -128,7 +150,7 @@ body {
   font-weight: 600;
   font-style: normal;
   letter-spacing: 0;
-  margin-right: 7px;
+  margin-right: 6px;
 }
 
 .navigation__menu-active-item::after {
@@ -137,17 +159,36 @@ body {
   background-image: url(images/sprites.webp);
   background-position: -152px -48px;
   width: 0.69em;
-  position: relative;
   z-index: 1;
   height: 0.65em;
   margin-top: 0.5em;
-  margin-right: 0;
   margin-left: 0.3076923077em;
 }
 
-.naviagtion__classification {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.navigation__classification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6px;
+}
 
+.navigation__classification-question {
+  color: #fff;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.navigation__classification-small-menu {
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0;
+  color: #91db19;
+  padding: 7px 7px 13px;
+  white-space: nowrap;
 }
