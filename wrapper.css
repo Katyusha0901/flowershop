@@ -1,0 +1,74 @@
+.wrapper {
+  display: none;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.wrapper__shop-manager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper__menu-icon {
+  background-image: url(images/sprites.webp);
+  width: 2.3em;
+  height: 2.1em;
+  margin: 0.9em 0.6em;
+  background-position: 0px -282px;
+  cursor: pointer;
+}
+
+.wrapper__divider {
+  width: 1px;
+  height: 104px;
+  background-color: #bbbbbb;
+}
+
+.wrapper__logo {
+  height: 99px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.wrapper__personal-management {
+  display: flex;
+  margin-right: 13px;
+  margin-top: 20px;
+  align-self: flex-start;
+  gap: 6px;
+}
+
+.wrapper__registration {
+  background-image: url(images/sprites-wrapper.webp);
+  width: 1em;
+  height: 18px;
+  background-position: -24px -198px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.wrapper__cart::before {
+  display: block;
+  content: "";
+  background-image: url(images/sprites.webp);
+  background-position: 255px 153px;
+  width: 26px;
+  height: 15px;
+}
+
+.wrapper__cart {
+  display: flex;
+  font-size: 13px;
+  font-weight: 600;
+  margin: -3px 4px 0 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .wrapper {
+    display: flex;
+  }
+}
