@@ -49,6 +49,7 @@ body {
   height: 2.1em;
   margin: 0.9em 0.6em;
   background-position: 0px -282px;
+  cursor: pointer;
 }
 
 .contnet__divider {
@@ -77,8 +78,8 @@ body {
   height: 18px;
   background-position: -24px -198px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
-
 
 .content__cart::before {
   display: block;
@@ -278,6 +279,7 @@ body {
   font-weight: 600;
   color: #450500;
   padding: 0 0 24px;
+  letter-spacing: -1px;
 }
 
 .catalog__content {
@@ -330,7 +332,7 @@ body {
   background-color: #687c22;
   font-weight: 600;
   padding: 15px;
-  margin-top: 47px;
+  margin-top: 25px;
 }
 
 .catalog__button:hover {
@@ -349,6 +351,14 @@ body {
   }
   .content__wrapper {
     display: flex;
+  }
+  .small-item {
+    flex-basis: 11em;
+  }
+
+  .small-item__picture {
+    width: 160px;
+    height: 200px;
   }
 }
 
